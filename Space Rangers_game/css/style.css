@@ -1,0 +1,87 @@
+body {
+    background: #212733;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana;
+}
+#area_game {
+    width: 1004px;
+    height: 1075px;
+    margin: auto;
+    padding: 0px;
+    position: relative;
+    background: url("../img/bg.png") no-repeat;
+}
+.area_game__user_count {
+    color: #ccc;
+    float: left;
+    position: absolute;
+    top: 32px;
+    left: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.area_game__user-message {
+    text-align: center;
+    color: rgb(135, 204, 255);
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+#area_game__user-message--msg {
+    color: rgb(236, 236, 236);
+}
+#area_game__table {
+    left: 173px;
+    top: 98px;
+}
+#area_game__table > tbody > tr > td {
+    width: 118px;
+    height: 118px;
+    cursor: pointer;
+    background: url("../img/border.png") repeat center;
+}
+#area_game__table > thead > tr > td > p,
+#area_game__table > tbody > tr > td > p {
+    color: #ccc;
+    font-size: 30px;
+    text-align: center;
+}
+#area_game__table > tbody > tr > td:not(:nth-child(1)):hover::after {
+    content: attr(data-title);
+    padding-left: 48px;
+    color: rgba(135, 204, 255, 0.72);
+}
+#area_game__form {
+    margin: 0px;
+    padding: 7px;
+    background-color: #30384E;
+}
+#crdInput {
+    width: 227px;
+    padding: 5px;
+    font-size: 13px;
+    border: 1px solid #4E6DA2;
+}
+#btnShot {
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #4E6DA2;
+    color: #2F3750;
+    background-color: #ECECEC;
+}
+
+
+.ship-red {
+    background: url("../img/ship-red.png") no-repeat center center !important;
+    transition: 0.5s;
+}
+.ship-blue {
+    background: url("../img/ship-blue.png") no-repeat center center !important;
+    transition: 0.5s;
+}
+.asteroid {
+    background: url("../img/asteroid.png") no-repeat center center !important;
+    transition: 0.5s;
+}
